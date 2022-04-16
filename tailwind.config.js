@@ -5,7 +5,7 @@ module.exports = {
      sm:'480px',
      md: '768px',
      lg: '976px',
-     xl: '1440px',
+     xl: '1840px',
     },
     extend: {
       colors: {
@@ -16,6 +16,10 @@ module.exports = {
         lightGrayishBlue: 'hsl(220, 16%, 96%)',
         veryLightGray: 'hsl(0, 0%, 98%)',
       },
+      backgroundImage: {
+        'herodesktop': "url('/images/bg-intr0-desktop')",
+        'heromobile': "url('/images/bg-intro-mobile.svg')",
+      }
     },
   },
   plugins: [],
