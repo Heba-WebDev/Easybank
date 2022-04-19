@@ -7,7 +7,7 @@
 This project was built with Tailwindcss and vanilla Javascript
 
 ## live demo
-
+https://heba-webdev.github.io/Easybank-Landing-Page/index.html
 ## challenges 
 
 This is my very first project using Tailwind. The biggest challenge and the
