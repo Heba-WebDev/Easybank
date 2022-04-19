@@ -26,11 +26,11 @@
     <!--Desktop menu-->
 
     <div class="hidden md:flex space-x-6 text-grayishBlue">
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Contact</a>
-      <a href="#">Blog</a>
-      <a href="#">Careers</a>
+      <a href="#" class="hover:border-b-4 hover:border-limeGreen">Home</a>
+      <a href="#" class="hover:border-b-4 hover:border-limeGreen">About</a>
+      <a href="#" class="hover:border-b-4 hover:border-limeGreen">Contact</a>
+      <a href="#" class="hover:border-b-4 hover:border-limeGreen">Blog</a>
+      <a href="#" class="hover:border-b-4 hover:border-limeGreen">Careers</a>
     </div>
 
 
@@ -42,10 +42,11 @@
 
      <!--Mobile hamburger menu-->
 
-     <div class="md:hidden">
-     <img alt="mobile menu" src="./images/icon-hamburger.svg">
-     <div class="hidden absolute flex flex-col bg-white top-16
-     left-1/4 mt-3 z-20 p-4 w-1/2 items-center space-y-4 rounded-xl">
+     <div class="md:hidden cursor-pointer">
+     <img alt="mobile menu" src="./images/icon-hamburger.svg" id="burger">
+     <div id="mobile-menu" class="hidden absolute flex-col bg-white top-16
+     left-1/4 mt-3 z-20 p-4 w-1/2 items-center space-y-4 rounded-xl
+     translate transition ease-in duration-300">
       <a href="#">Home</a>
       <a href="#">About</a>
       <a href="#">Contact</a>
@@ -193,7 +194,7 @@
           
           <div class=" p-4 flex flex-col gap-y-1">
             <small class="text-xs text-grayishBlue"> By Claire Robinson</small>
-            <h5>Receive money in any currency with no fees</h5>
+            <h5 class="hover:text-limeGreen">Receive money in any currency with no fees</h5>
           <p class="text-grayishBlue max-w-md text-xs text-1xl text-center md:text-left">
             Receive money in any currency with no fees
             The world is getting smaller and we’re becoming more mobile. So why should you be 
@@ -215,7 +216,7 @@
           
           <div class=" p-4 flex flex-col gap-y-1">
             <small class="text-xs text-grayishBlue"> By Wilson Hutton</small>
-            <h5> Treat yourself without worrying about money</h5>
+            <h5 class="hover:text-limeGreen"> Treat yourself without worrying about money</h5>
           <p class="text-grayishBlue max-w-md text-xs text-1xl text-center md:text-left">
             Our simple budgeting feature allows you to separate out your spending and set 
             realistic limits each month. That means you …
@@ -236,7 +237,7 @@
           
           <div class=" p-4 flex flex-col gap-y-1">
             <small class="text-xs text-grayishBlue">By Wilson Hutton</small>
-            <h5>Take your Easybank card wherever you go</h5>
+            <h5 class="hover:text-limeGreen">Take your Easybank card wherever you go</h5>
           <p class="text-grayishBlue max-w-md text-xs text-1xl text-center md:text-left">
             We want you to enjoy your travels. This is why we don’t charge any fees on purchases 
             while you’re abroad. We’ll even show you …
@@ -257,7 +258,7 @@
           
           <div class=" p-4 flex flex-col gap-y-1">
             <small class="text-xs text-grayishBlue"> By Claire Robinson</small>
-            <h5> Our invite-only Beta accounts are now live!</h5>
+            <h5 class="hover:text-limeGreen"> Our invite-only Beta accounts are now live!</h5>
           <p class="text-grayishBlue max-w-md text-xs text-1xl text-center md:text-left">
             After a lot of hard work by the whole team, we’re excited to launch our closed beta. 
             It’s easy to request an invite through the site ...
@@ -297,14 +298,14 @@
         <!--1 Left side-->
         <div class="flex flex-col md:justify-between items-center md:items-start gap-y-6
          pb-4 md:gap-y-10 md:pr-3">
-        <img alt="logo" src="./images/logo.svg">
+        <img class="mix-blend-exclusion " alt="logo" src="./images/logo.svg">
 
         <div class="flex space-x-4 justify-center"> 
-          <img alt="facebook" src="./images/icon-facebook.svg">
-          <img alt="youtube" src="./images/icon-youtube.svg">
-          <img alt="twitter" src="./images/icon-twitter.svg">
-          <img alt="pinterest" src="./images/icon-pinterest.svg">
-          <img alt="instagram" src="./images/icon-instagram.svg">
+          <img class="icon-fb" alt="facebook" src="./images/icon-facebook.svg">
+          <img class="icon-yt" alt="youtube" src="./images/icon-youtube.svg">
+          <img  class="icon-tw" alt="twitter" src="./images/icon-twitter.svg">
+          <img class="icon-pin" alt="pinterest" src="./images/icon-pinterest.svg">
+          <img class="icon-insta" alt="instagram" src="./images/icon-instagram.svg">
         </div>
         </div>
 
@@ -312,18 +313,18 @@
 
         <div class="flex flex-col text-center text-grayishBlue md:text-left
          md:justify-between items-center md:items-start gap-y-2 text-sm py-3 md:py-0">
-          <a href="#">About</a>
-          <a href="#">Contact</a>
-          <a href="#">Blog</a>
+          <a href="#" class="hover:text-limeGreen">About</a>
+          <a href="#" class="hover:text-limeGreen">Contact</a>
+          <a href="#" class="hover:text-limeGreen">Blog</a>
         </div>
 
         <!--3 Left side-->
 
         <div class="flex flex-col text-center md:text-left text-grayishBlue 
         md:justify-between items-center md:items-start gap-y-2 text-sm py-3 md:py-0">
-          <a href="#">Carrers</a>
-          <a href="#">Support</a>
-          <a href="#">Privecy Policy</a>
+          <a href="#" class="hover:text-limeGreen">Carrers</a>
+          <a href="#" class="hover:text-limeGreen">Support</a>
+          <a href="#" class="hover:text-limeGreen">Privecy Policy</a>
         </div>
 
       </div>
@@ -347,6 +348,6 @@
   </footer>
  
   
-
+<script src="sandbag.js"></script>
 </body>
 </html>

@@ -19,7 +19,10 @@ module.exports = {
       backgroundImage: {
         'herodesktop': "url('/images/bg-intr0-desktop')",
         'heromobile': "url('/images/bg-intro-mobile.svg')",
-      }
+      },
+      variants: {
+        fill: ['hover', 'focus'],
+      },
     },
   },
   plugins: [],
