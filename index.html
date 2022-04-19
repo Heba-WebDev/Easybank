@@ -16,10 +16,10 @@
   <!--Navbar-->
 
   <nav class="flex relative p-5 bg-white justify-between md:content-center sm:sm:justify-between
-   md:justify-around">
+   md:justify-around relative z-10">
 
    <!--Logo-->
-    <div >
+    <div>
     <img alt="logo" src="./images/logo.svg">
     </div>
 
@@ -49,15 +49,19 @@
 
 
   <!--Hero Section-->
-  <section id="hero" class="bg-slate-50">
+  <section id="hero" class="bg-slate-50 z-40 relative">
 
+
+   
   <!--flex container-->
 
   <div class="md:container flex flex-col-reverse justify-between md:flex-row items-center px-6
-  mx-auto  space-y-0 md:space-y-2">
+  mx-auto  space-y-0 md:space-y-2 relative">
 
+  
    <!--Left item-->
-   <div class="flex flex-col mb-32 space-y-12 md:w-1/2">
+   <div class="flex flex-col mb-32 space-y-12 md:w-1/2 z-20">
+     
    <h1 class="max-w-md text-4xl font-bold text-center md:text-5xl md:text-left">
     Next generation digital banking
    </h1>
@@ -74,7 +78,7 @@
 
    <!--Right item-->
 
-   <div class="flex flex-col mb-32 space-y-12 md:w-1/2">
+   <div class="flex flex-col mb-32 space-y-12 md:w-1/2 z-10">
      <img alt="mobile banking" src="./images/image-mockups.png">
    </div>
   </div>
@@ -84,7 +88,7 @@
 
 
 
-  <section class="bg-slate-100 py-5">
+  <section class="bg-slate-100 py-5 z-50">
 
     <div class="container gap-x-5 flex flex-col justify-center text-center md:text-left 
     py-12 px-6 mx-auto space-y-5">
@@ -276,14 +280,15 @@
 
 
     <!--The footer contaner-->
-    <div class="container mx-auto py-8 flex flex-col md:flex-row justify-center md:justify-between space-y-3 md:space-y-0 md:space-x-3">
+    <div class="container mx-auto py-8 md:py-12 flex flex-col md:flex-row justify-center md:justify-between space-y-3 md:space-y-0 md:space-x-0">
    
       <!--Left side of the footer-->
 
-      <div class="flex flex-col md:flex-row text-center pb-4 md:text-left md:content-around  md:gap-x-4 text-white">
+      <div class="flex flex-col md:flex-row text-center  md:text-left md:content-around  md:gap-x-4 text-white">
        
         <!--1 Left side-->
-        <div style="border: red solid 1px;" class="flex flex-col md:justify-between items-center md:items-start gap-y-6 pb-4 md:gap-y-10">
+        <div class="flex flex-col md:justify-between items-center md:items-start gap-y-6
+         pb-4 md:gap-y-10 md:pr-3">
         <img alt="logo" src="./images/logo.svg">
 
         <div class="flex space-x-4 justify-center"> 
@@ -297,7 +302,8 @@
 
         <!--2 Left side-->
 
-        <div style="border: red solid 1px;" class="flex flex-col text-center md:text-left md:justify-between items-center md:items-start gap-y-1 text-sm">
+        <div class="flex flex-col text-center text-grayishBlue md:text-left
+         md:justify-between items-center md:items-start gap-y-2 text-sm py-3 md:py-0">
           <a href="#">About</a>
           <a href="#">Contact</a>
           <a href="#">Blog</a>
@@ -305,7 +311,8 @@
 
         <!--3 Left side-->
 
-        <div style="border: red solid 1px;" class="flex flex-col text-center md:text-left md:justify-between items-center md:items-start gap-y-1 text-sm">
+        <div class="flex flex-col text-center md:text-left text-grayishBlue 
+        md:justify-between items-center md:items-start gap-y-2 text-sm py-3 md:py-0">
           <a href="#">Carrers</a>
           <a href="#">Support</a>
           <a href="#">Privecy Policy</a>
@@ -315,7 +322,7 @@
 
      <!--Right side of the footer-->
 
-     <div style="border: red solid 1px;" class="flex flex-col md:justify-between md:items-center text-center gap-y-4">
+     <div class="flex flex-col md:justify-between md:items-center text-center gap-y-4">
      
       <div class="flex justify-center md:justify-start">
         <a href="#" class="bg-gradient-to-r from-limeGreen to-brightCyan px-5 py-1 rounded-full text-white text-center md:text-left">Request Invite</a>
